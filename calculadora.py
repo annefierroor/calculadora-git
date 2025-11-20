@@ -16,6 +16,9 @@ def division(a, b):
         return "Error: división por cero"
     return a / b
 
+def potencia(a, b):
+    return a ** b
+
 def validar_entrada(valor):
     try:
         return float(valor)
@@ -28,7 +31,8 @@ if __name__ == "__main__":
     print("2. Resta")
     print("3. Multiplicación")
     print("4. División")
-    opcion = input("Elige una opción (1-4): ")
+    print("5. Potencia")
+    opcion = input("Elige una opción (1-5): ")
 
     a = validar_entrada(input("Primer número: "))
     b = validar_entrada(input("Segundo número: "))
@@ -44,5 +48,7 @@ if __name__ == "__main__":
             print("✅ Resultado:", multiplicacion(a, b))
         elif opcion == "4":
             print("✅ Resultado:", division(a, b))
+        elif opcion == "5":
+            print("✅ Resultado:", potencia(a, b))
         else:
             print("❌ Opción no válida")
