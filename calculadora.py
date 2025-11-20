@@ -49,6 +49,6 @@ if __name__ == "__main__":
         elif opcion == "4":
             print("✅ Resultado:", division(a, b))
         elif opcion == "5":
-            print("⚡ Resultado:", potencia(a, b))
+            print("🎯 Resultado:", potencia(a, b))
         else:
             print("❌ Opción no válida")
